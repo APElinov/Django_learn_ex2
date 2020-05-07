@@ -1,0 +1,10 @@
+# Dirs
+.idea
+.vscode
+.pycharm
+__pycache__
+
+# Files
+*.pyc
+db.sqlite3
+venv
