@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'mainapp',
+    'authnapp',
 ]
 
 MIDDLEWARE = [
@@ -84,6 +85,7 @@ DATABASES = {
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
+AUTH_USER_MODEL = "authnapp.ShopUser"
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -120,9 +122,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, "static"),
-)
+STATICFILES_DIRS = os.path.join(BASE_DIR, "static"),
+
 
 # Media files
 MEDIA_URL = '/media/'
