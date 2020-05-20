@@ -1,7 +1,9 @@
 # Dirs
-.idea
+
+.pycharm
 __pycache__
 
 # Files
-*sqlite3
+
 *.pyc
+db.sqlite3
